@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Taichi</title>
+    <style>
+        .background {
+            position: fixed;
+            left: 25%;
+            /* animation-name: taichi; */
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-delay: 0;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-play-state: running;
+        }
+        .yin-taichi {
+            width: 300px;
+            height: 600px;
+            border-radius: 500px 0 0 500px;
+            float: left;
+            background-color: #000000;
+            box-shadow: 0 0 50px rgba(0, 0, 0, .8);
+        }
+        .yang-taichi {
+            width: 300px;
+            height: 600px;
+            border-radius: 0 500px 500px 0;
+            float: left;
+            background-color: #ffffff;
+            box-shadow: 0 0 50px rgba(0, 0, 0, .8);
+        }
+        .yin-circle {
+            width: 300px;
+            height: 300px;
+            border-radius: 300px;
+            background-color: #000000;
+            position: relative;
+            transform: translateX(50%);
+        }
+        .yang-circle {
+            width: 300px;
+            height: 300px;
+            border-radius: 300px;
+            background-color: #ffffff;
+            position: relative;
+            transform: translate(-50%, 100%);
+        }
+        .yin-scircle {
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            background-color: #ffffff;
+            position: relative;
+            transform: translate(100%, 100%);
+        }
+        .yang-scircle {
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            background-color: #000000;
+            position: relative;
+            transform: translate(100%, 100%);
+        }
+        @keyframes taichi {
+            100% {-webkit-transform: rotate(360deg);}
+        }
+
+        @-webkit-keyframes taichi {
+            100% {-webkit-transform: rotate(360deg);}
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background">
+        <div class="yin-taichi">
+            <div class="yin-circle">
+                <div class="yin-scircle"></div>
+            </div>
+        </div>
+        <div class="yang-taichi">
+            <div class="yang-circle">
+                <div class="yang-scircle"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
